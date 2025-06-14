@@ -1,12 +1,9 @@
 package dp.strategy;
 
-import dp.strategy.strategies.NormalDriveStrategy;
-import dp.strategy.strategies.SportsDriveStrategy;
-
 public class StrategyDesignMain {
     public static void main(String[] args) {
-        Vehicle goodsVehicle = new GoodsVehicle(new NormalDriveStrategy());
-        Vehicle sportsVehicle = new SportsVehicle(new SportsDriveStrategy());
+        Vehicle goodsVehicle = new GoodsVehicle();
+        Vehicle sportsVehicle = new SportsVehicle();
 
         goodsVehicle.drive();
         sportsVehicle.drive();

@@ -1,9 +1,9 @@
 package dp.strategy;
 
-import dp.strategy.strategies.DriveStrategy;
+import dp.strategy.strategies.NormalDriveStrategy;
 
 public class GoodsVehicle extends Vehicle {
-    public GoodsVehicle(DriveStrategy driveStrategy) {
-        super(driveStrategy);
+    public GoodsVehicle() {
+        super(new NormalDriveStrategy());
     }
 }

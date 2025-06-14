@@ -1,9 +1,9 @@
 package dp.strategy;
 
-import dp.strategy.strategies.DriveStrategy;
+import dp.strategy.strategies.SportsDriveStrategy;
 
 public class SportsVehicle extends Vehicle {
-    public SportsVehicle(DriveStrategy driveStrategy) {
-        super(driveStrategy);
+    public SportsVehicle() {
+        super(new SportsDriveStrategy());
     }
 }
