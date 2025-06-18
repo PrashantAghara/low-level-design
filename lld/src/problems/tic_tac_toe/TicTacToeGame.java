@@ -22,7 +22,7 @@ public class TicTacToeGame {
         board = new Board(3);
     }
 
-    private String startGame() {
+    public String startGame() {
         Scanner scanner = new Scanner(System.in);
         boolean noWinner = true;
 
@@ -56,21 +56,21 @@ public class TicTacToeGame {
         return "Tie";
     }
 
-    boolean isThereWinner(int row, int col, PieceType type) {
+    private boolean isThereWinner(int row, int col, PieceType type) {
         boolean rowMatch = true;
         boolean colMatch = true;
         boolean diagonalMatch = true;
         boolean antiDiagonalMatch = true;
 
         for (int i = 0;i < board.size; i++) {
-            if (board.board[row][i] == null | board.board[row][i].pieceType != type) {
+            if (board.board[row][i] == null || board.board[row][i].pieceType != type) {
                 rowMatch = false;
                 break;
             }
         }
 
         for (int i = 0;i < board.size; i++) {
-            if (board.board[i][col] == null | board.board[i][col].pieceType != type) {
+            if (board.board[i][col] == null || board.board[i][col].pieceType != type) {
                 colMatch = false;
                 break;
             }
