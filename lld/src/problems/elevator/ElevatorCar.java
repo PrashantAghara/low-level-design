@@ -8,7 +8,7 @@ import problems.elevator.enums.Status;
 
 public class ElevatorCar {
 
-    int id;
+    public int id;
     Display display;
     InternalButton internalButtons;
     Status elevatorState;

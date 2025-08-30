@@ -5,7 +5,7 @@ import java.util.List;
 
 public class ElevatorCreator {
 
-    static List<ElevatorController> elevatorControllerList = new ArrayList<>();
+    public static List<ElevatorController> elevatorControllerList = new ArrayList<>();
     static {
 
         ElevatorCar elevatorCar1 = new ElevatorCar();

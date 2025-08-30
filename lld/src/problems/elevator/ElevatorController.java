@@ -7,7 +7,7 @@ import java.util.PriorityQueue;
 public class ElevatorController {
     PriorityQueue<Integer> upMinPQ;
     PriorityQueue<Integer> downMaxPQ;
-    ElevatorCar elevatorCar;
+    public ElevatorCar elevatorCar;
 
     ElevatorController(ElevatorCar elevatorCar) {
 
