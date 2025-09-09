@@ -9,7 +9,7 @@ public class InternalButton {
     int[] availableButtons = {1,2,3,4,5,6,7,8,9,10};
     int buttonSelected;
 
-    void pressButton(int destination, ElevatorCar elevatorCar) {
+    public void pressButton(int destination, ElevatorCar elevatorCar) {
 
         //1.check if destination is in the list of available floors
 
