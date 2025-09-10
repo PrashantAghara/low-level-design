@@ -1,10 +1,11 @@
 package problems.vendingmachine;
 
 
+import problems.vendingmachine.states.VendingMachineState;
 
 public class Main {
     public static void main(String[] args) {
-        vendingmachine.VendingMachine vendingMachine = new VendingMachine();
+        VendingMachine vendingMachine = new VendingMachine();
         try {
             System.out.println("|");
             System.out.println("filling up the inventory");
