@@ -6,7 +6,6 @@ public class Main {
         Remote remote = new Remote();
         remote.setCommand(new TurnAcOnCommand(ac));
         remote.pressButton();
-        remote.setCommand(new TurnACOffCommand(ac));
-        remote.pressButton();
+        remote.undo();
     }
 }
